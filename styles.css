@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.line {
+  height: 3px;
+  width: 50px;
+  background-color: #7888e6;
+  margin: 10px auto;
+}
+
+input, select, button {
+  text-align: center;
+  width: 50px;
+  border: 3px #7888e6 solid;
+  font-size: 1rem;
+  outline: none;
+}
+
+
+h1 {
+  text-align: center;
+  margin: 2rem auto;
+  width: 20rem;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #b8b5ff;
+  color: #fff;
+  cursor: default;
+}
+
+.grid-item {
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 0,09fr);
+
+
+
+}
+
+.grid-item button {
+  grid-column: 2/3;
+  width: 6rem;
+  margin-top: 1rem;
+  height: 2rem;
+  cursor: pointer;
+  background-color: #b8b5ff;
+  color: #fff;
+}
+
+.grid-item select#operator {
+  font-size: 0.8rem;
+  width: 3rem;
+  margin: auto;
+}
+
+.fraction input {
+  width: 4rem;
+}
+
+section#result {
+  margin: 5rem auto;
+  text-align: center;
+
+}
+
+section#result h1 {
+  width: 10rem;
+}
+
+section#result .fraction-result {
+  position: relative;
+  display: inline-block;
+}
+
+section#result .fraction-result input {
+border: none;
+font-size: 1.5rem;
+}
+
+section#result .fraction-result input.wholeNumber {
+  position: absolute;
+  top: 25px;
+  right: 50px;
+}
+
+#fraction-figure {
+  margin: 1rem;
+  display: flex;
+}
+
+#fraction-figure .denom-box {
+  background-color: transparent;
+  height: 50px;
+  width: 50px;
+  border: 1px solid #333;
+}
+
+#fraction-figure .numerator-box {
+  height: 50px;
+  width: 50px;
+  border: 1px solid #333;
+  background-color: #7888e6;
+}
+
+#fraction-figure .separate {
+  margin-right: 1rem;
+}
